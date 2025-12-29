@@ -1,10 +1,12 @@
 body = $response.body.replace(/while.{7}\n/, "");
 let obj = JSON.parse(body);
 obj.entitlement.status="subscriber";
+obj.entitlement.expired_date="2027-10-18T12:00:00.000000Z"
+obj.entitlement.deletion_date="2027-04-30T05:37:42.156109Z"
 obj.current_subs={
       "product_id": "lightroom",
       "store": "adobe",
-      "purchase_date":"2025-10-07T12:41:39.856692Z",
+      "purchase_date": "2025-10-10T16:32:10.254954Z",
       "sao": {
         "inpkg_CCES": "0",
         "inpkg_CCLE": "1",
@@ -24,10 +26,10 @@ obj.current_subs={
       }
     };
 obj.entitlement.storage={
-      "used": 6316803008,
-      "limit": 112742891520,
-      "display_limit": 107374182400,
-      "warn": 85899345920
+      "used": 0,
+      "limit": 1154487209165,
+      "display_limit": 1099511627776,
+      "warn": 992137445376
     };
 obj.avatar.placeholder=true;
 body = JSON.stringify(obj); 
